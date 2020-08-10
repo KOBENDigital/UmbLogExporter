@@ -4,5 +4,8 @@
 		"~/App_Plugins/UmbLogExporter/backoffice/umbLogExporter/js/search.controller.js",
 		"~/App_Plugins/UmbLogExporter/backoffice/umbLogExporter/js/umbbuttongroupextended.directive.js",
 		"~/App_Plugins/UmbLogExporter/backoffice/umbLogExporter/js/umblogexporter.resource.js"
+	],
+	"css": [
+		"~/App_Plugins/UmbLogExporter/backoffice/umbLogExporter/css/umblogexporter.css"
 	]
 }

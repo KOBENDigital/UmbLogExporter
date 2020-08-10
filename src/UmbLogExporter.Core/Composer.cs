@@ -8,6 +8,8 @@ namespace UmbLogExporter.Core
 		public void Compose(Composition composition)
 		{
 			composition.Register<ILogExportBuilder, DefaultLogExportBuilder>();
+
+			composition.Components().Append<TreeEvents>();
 		}
 	}
 }

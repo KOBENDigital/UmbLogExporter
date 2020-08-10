@@ -16,8 +16,6 @@
 
 			vm.exporting = true;
 
-			console.log(options);
-
 			$http({
 				method: 'GET',
 				url: '/Umbraco/backoffice/UmbLogExporter/LogExporter/Export/',

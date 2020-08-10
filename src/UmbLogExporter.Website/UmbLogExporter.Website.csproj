@@ -264,6 +264,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Plugins\UmbLogExporter\backoffice\umbLogExporter\css\umblogexporter.css" />
     <Content Include="App_Plugins\UmbLogExporter\backoffice\umbLogExporter\js\overview.controller.js" />
     <Content Include="App_Plugins\UmbLogExporter\backoffice\umbLogExporter\js\search.controller.js" />
     <Content Include="App_Plugins\UmbLogExporter\backoffice\umbLogExporter\js\umbbuttongroupextended.directive.js" />

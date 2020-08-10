@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text;
 using OfficeOpenXml;
 using OfficeOpenXml.Style;
@@ -10,8 +11,14 @@ namespace UmbLogExporter.Core
 {
 	public class DefaultLogExportBuilder : ILogExportBuilder
 	{
-		public void ProcessData(Stream stream, LogTimePeriod timePeriod, List<LogMessage> messages)
+		public void ProcessData(Stream stream, LogTimePeriod timePeriod, IEnumerable<LogMessage> messages)
 		{
+			var logMessages = messages.ToList();
+			if (logMessages.Any())
+			{
+				return;
+			}
+
 			using (var excel = new ExcelPackage())
 			{
 				var sheet = excel.Workbook.Worksheets.Add($"{timePeriod.StartTime:yyyy-MM-dd} to {timePeriod.EndTime:yyyy-MM-dd}");
@@ -28,7 +35,7 @@ namespace UmbLogExporter.Core
 
 				var hasExceptions = false;
 
-				foreach (var logMessage in messages)
+				foreach (var logMessage in logMessages)
 				{
 					//SetDateTimeCell(sheet, row, 1, logMessage.Timestamp);
 					SetCell(sheet, row, 0, logMessage.Timestamp.ToString());
@@ -53,7 +60,7 @@ namespace UmbLogExporter.Core
 					row++;
 				}
 
-				var allCells = sheet.Cells[1, 1, messages.Count, 5];
+				var allCells = sheet.Cells[1, 1, logMessages.Count(), 5];
 				allCells.AutoFitColumns();
 				allCells.Style.VerticalAlignment = ExcelVerticalAlignment.Top;
 

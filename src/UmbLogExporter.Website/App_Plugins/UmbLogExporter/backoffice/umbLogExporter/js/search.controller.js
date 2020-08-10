@@ -1,7 +1,7 @@
 (function () {
 	"use strict";
 
-	function LogViewerSearchController($location, logViewerResource, overlayService, umbLogExporterResource) {
+	function logViewerSearchController($location, logViewerResource, overlayService, umbLogExporterResource) {
 
 		var vm = this;
 
@@ -375,6 +375,6 @@
 
 	}
 
-	angular.module("umbraco").controller("Umbraco.Editors.LogViewer.SearchController", LogViewerSearchController);
+	angular.module("umbraco").controller("Umbraco.Editors.LogViewer.SearchController", logViewerSearchController);
 
 })();

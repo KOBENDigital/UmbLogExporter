@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
@@ -40,7 +41,7 @@ namespace UmbLogExporter.Core
 
 				if (CanViewLogs(logTimePeriod) == false)
 				{
-					throw new HttpResponseException(Request.CreateNotificationValidationErrorResponse("Unable to view logs, due to size"));
+					throw new HttpResponseException(Request.CreateNotificationValidationErrorResponse("Unable to export logs, due to size"));
 				}
 
 				var direction = orderDirection == "Descending" ? Direction.Descending : Direction.Ascending;
@@ -57,6 +58,11 @@ namespace UmbLogExporter.Core
 					pageNumber++;
 					results = _logViewer.GetLogs(logTimePeriod, pageNumber, pageSize, direction, filterExpression, logLevels);
 					items.AddRange(results.Items);
+				}
+
+				if (!items.Any())
+				{
+					throw new HttpResponseException(Request.CreateNotificationValidationErrorResponse("Unable to export logs, no messages were found"));
 				}
 
 				var stream = new MemoryStream();
@@ -84,7 +90,7 @@ namespace UmbLogExporter.Core
 			catch (Exception ex)
 			{
 				_logger.Error<LogExporterController>("Failed to export", ex);
-				throw new HttpResponseException(HttpStatusCode.InternalServerError);
+				throw new HttpResponseException(Request.CreateNotificationValidationErrorResponse("Unable to export logs, internal server error"));
 			}
 		}
 

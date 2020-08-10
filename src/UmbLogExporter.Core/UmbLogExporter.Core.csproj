@@ -242,6 +242,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Composer.cs" />
+    <Compile Include="TreeEvents.cs" />
     <Compile Include="ILogExportBuilder.cs" />
     <Compile Include="DefaultLogExportBuilder.cs" />
     <Compile Include="LogExporterController.cs" />

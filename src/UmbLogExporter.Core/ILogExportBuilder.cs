@@ -6,6 +6,6 @@ namespace UmbLogExporter.Core
 {
 	public interface ILogExportBuilder
 	{
-		void ProcessData(Stream stream, LogTimePeriod timePeriod, List<LogMessage> messages);
+		void ProcessData(Stream stream, LogTimePeriod timePeriod, IEnumerable<LogMessage> messages);
 	}
 }
