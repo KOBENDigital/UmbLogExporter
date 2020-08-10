@@ -81,6 +81,11 @@
 							            label-key="general_search">
 							</umb-button>-->
 
+							<umb-date-time-picker class="datepicker" style="margin-left: 5px;"
+							                      ng-model="vm.period"
+							                      options="vm.config"
+							                      on-close="vm.dateRangeChange(selectedDates, dateStr, instance)">
+							</umb-date-time-picker>
 							<umb-button-group button-style="action"
 							                  default-button="vm.searchButtonGroup.defaultButton"
 							                  sub-buttons="vm.searchButtonGroup.subButtons"
@@ -96,7 +101,7 @@
 			<div ng-if="!vm.loading" class="log-items">
 
 				<!-- Loader for the main logs content when paging -->
-				<umb-load-indicator ng-if="vm.logsLoading"></umb-load-indicator>
+				<umb-load-indicator ng-if="vm.logsLoading && vm.exporting"></umb-load-indicator>
 
 				<!-- Empty states -->
 				<umb-empty-state ng-if="vm.logItems.totalItems === 0" position="center">
@@ -104,7 +109,7 @@
 				</umb-empty-state>
 
 				<!-- Main Log Table -->
-				<umb-box data-element="node-info-history" ng-if="!vm.logsLoading && vm.logItems.totalItems > 0">
+				<umb-box data-element="node-info-history" ng-if="!vm.logsLoading && !vm.exporting && vm.logItems.totalItems > 0">
 					<umb-box-content class="block-form">
 
 						<div ng-if="vm.logItems.totalItems > 0">

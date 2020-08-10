@@ -89,6 +89,38 @@
 		vm.back = back;
 
 		//custom
+		vm.period = [vm.logOptions.startDate, vm.logOptions.endDate];
+
+		vm.config = {
+			enableTime: false,
+			dateFormat: "Y-m-d",
+			time_24hr: false,
+			mode: "range",
+			maxDate: "today",
+			conjunction: " to "
+		};
+
+		vm.dateRangeChange = function(selectedDates, dateStr, instance) {
+			if (selectedDates.length > 0) {
+				const startDate = selectedDates[0].toIsoDateString();
+				const endDate = selectedDates[selectedDates.length - 1].toIsoDateString(); // Take the last date as end
+
+				vm.logOptions.startDate = startDate;
+				vm.logOptions.endDate = endDate;
+
+				vm.period = [vm.logOptions.startDate, vm.logOptions.endDate];
+
+				vm.logOptions.pageNumber = 1;
+
+				$location.search('lq', vm.logOptions.filterExpression);
+				$location.search('startDate', vm.logOptions.startDate);
+				$location.search('endDate', vm.logOptions.endDate);
+
+				getLogs();
+			}
+		};
+
+		//custom
 		vm.exporting = false;
 
 		//custom
@@ -98,7 +130,7 @@
 				hotKey: "",
 				hotKeyWhenHidden: true,
 				handler: function () {
-					exportLog();
+					search();
 				}
 			},
 			subButtons: [
@@ -131,6 +163,8 @@
 			}
 
 			vm.loading = true;
+
+			vm.period = [vm.logOptions.startDate, vm.logOptions.endDate];
 
 			logViewerResource.getSavedSearches().then(function (data) {
 				vm.searches = data;

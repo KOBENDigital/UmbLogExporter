@@ -1,7 +1,7 @@
 ﻿(function () {
 	'use strict';
 
-	function ButtonGroupExtendedDirective() {
+	function buttonGroupExtendedDirective() {
 
 		function link(scope) {
 
@@ -47,6 +47,6 @@
 		return directive;
 	}
 
-	angular.module('umbraco.directives').directive('umbButtonGroupExtended', ButtonGroupExtendedDirective);
+	angular.module('umbraco.directives').directive('umbButtonGroupExtended', buttonGroupExtendedDirective);
 
 })();
