@@ -32,7 +32,7 @@ namespace UmbLogExporter.Core
 		{
 			var sleeps = new[] { 1000, 2000, 3000, 4000, 5000, 6000 };
 			var rand = new Random();
-			System.Threading.Thread.Sleep(sleeps[rand.Next(sleeps.Length)]);
+			//System.Threading.Thread.Sleep(sleeps[rand.Next(sleeps.Length)]);
 
 			try
 			{

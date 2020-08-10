@@ -7,7 +7,7 @@ namespace UmbLogExporter.Core
 	{
 		public void Compose(Composition composition)
 		{
-			composition.Register<ILogExportBuilder, LogExportBuilder>();
+			composition.Register<ILogExportBuilder, DefaultLogExportBuilder>();
 		}
 	}
 }

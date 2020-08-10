@@ -243,7 +243,7 @@
   <ItemGroup>
     <Compile Include="Composer.cs" />
     <Compile Include="ILogExportBuilder.cs" />
-    <Compile Include="LogExportBuilder.cs" />
+    <Compile Include="DefaultLogExportBuilder.cs" />
     <Compile Include="LogExporterController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TreeController.cs" />
