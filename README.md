@@ -1,11 +1,10 @@
-
 # UmbLogExporter
-A Log Viewer replacement for Umbraco 8
+A Log Viewer replacement for [Umbraco](https://umbraco.com/) 8
 
 ## What is UmbLogExporter?
-UmbLogExporter builds on the Log Viewer that ships with the Umbraco 8 Core adding options to export logs to a format of your choosing. It also tweaks the Log Viewer interface allowing you to change the log date range when searching.
+UmbLogExporter builds on the [Log Viewer](https://our.umbraco.com/documentation/getting-started/Backoffice/LogViewer/) that ships with the [Umbraco](https://umbraco.com/) 8 Core adding options to export logs to a format of your choosing. It also tweaks the Log Viewer interface allowing you to change the log date range when searching.
 
-The default implementation exports to Excel format using the [EPPlus](https://www.nuget.org/packages/EPPlus/) nuget package.
+The default export implementation takes logs recorded using the `CompactJsonFormatter` formatter that Umbraco installs with and outputs an Excel file using [EPPlus](https://www.nuget.org/packages/EPPlus/).
 
 ## Install
 Once installed, the `Log Viewer` node in the settings tree will be replaced with `Log Viewer/Exporter`.
@@ -23,4 +22,7 @@ The new date range field in the search bar allows for changing the dates without
 ## Writing Your Own Exporters
 The `UmbLogExporter.Core` project contains the `ILogExportBuilder` interface. The default implementation is `DefaultLogExportBuilder` which will give you a starting point for writing your own exporters.
 
-Excel was a good option to ship with the project as most clients will be familiar with searching data in Excel. However, it could easily export to CSV, a database or a destination of your choosing.
+Excel was a good option to ship with the project as most clients will be familiar with searching data using Excel. However, it could easily export to CSV, a database or a destination of your choosing.
+
+## Credits
+As 99.9% of the code in this project is based on the Log Viewer that ships with Umbraco 8 it would be rude not to credit the core team - thanks for all your hard work guys!
