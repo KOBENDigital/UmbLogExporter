@@ -391,3 +391,4 @@ MigrationBackup/
 # Additional Umbraco 
 # =========================
 src/UmbLogExporter.Website/umbraco
+src/BuildPackage/Package

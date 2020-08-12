@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata>
+		<id>UmbLogExporter.Core</id>
+		<version>0.0.1.0</version>
+		<title>Core library for the UmbLogExporter Log Viewer replacement for Umbraco 8</title>
+		<authors>ribs digital</authors>
+		<owners>ribs digital</owners>
+		<projectUrl>https://github.com/ribsdigital/UmbLogExporter/</projectUrl>
+		<requireLicenseAcceptance>true</requireLicenseAcceptance>
+		<description>Core library for the UmbLogExporter Log Viewer replacement for Umbraco 8</description>
+		<summary>Core library for the UmbLogExporter Log Viewer replacement for Umbraco 8</summary>
+		<copyright>ribgs digital</copyright>
+		<license type="expression">MIT</license>
+		<language>en-Au</language>
+		<tags>umbraco</tags>
+		<dependencies>
+			<dependency id="UmbracoCms.Core" version="8.5.3" />
+			<dependency id="UmbracoCms.Web" version="8.5.3" />
+			<dependency id="EPPlus" version="4.5.3.2" />
+		</dependencies>
+	</metadata>
+</package>

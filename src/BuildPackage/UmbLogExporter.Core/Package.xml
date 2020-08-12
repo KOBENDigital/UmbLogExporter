@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+	<info>
+		<package>
+			<name>UmbLogExporter.Core</name>
+			<version>0.0.1.0</version>
+			<license url="http://opensource.org/licenses/MIT">MIT License</license>
+			<url>https://github.com/ribsdigital/UmbLogExporter/</url>
+			<requirements>
+				<major>0</major>
+				<minor>1</minor>
+				<patch>0</patch>
+			</requirements>
+		</package>
+		<author>
+			<name>ribs digital</name>
+			<website>https://ribsdigital.com</website>
+		</author>
+		<readme>
+			<![CDATA[Core library for the UmbLogExporter Log Viewer replacement for Umbraco 8]]>
+		</readme>
+	</info>
+	<DocumentTypes />
+	<Templates />
+	<Stylesheets />
+	<Macros />
+	<DictionaryItems />
+	<Languages />
+	<DataTypes />
+	<Actions />
+	<control />
+	<files />
+</umbPackage>
