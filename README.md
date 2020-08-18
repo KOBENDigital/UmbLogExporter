@@ -32,6 +32,7 @@ The Umbraco backoffice login details are:
 
 Username: root
 (Yes, it should be an email address... But we didn't want a dummy email address getting spammed with password reset requests...)
+
 Password: testing1234
 
 ## Credits
