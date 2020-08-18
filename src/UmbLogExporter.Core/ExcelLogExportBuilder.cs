@@ -9,12 +9,12 @@ using Umbraco.Core.Logging.Viewer;
 
 namespace UmbLogExporter.Core
 {
-	public class DefaultLogExportBuilder : ILogExportBuilder
+	public class ExcelLogExportBuilder : ILogExportBuilder
 	{
 		public void ProcessData(Stream stream, LogTimePeriod timePeriod, IEnumerable<LogMessage> messages)
 		{
 			var logMessages = messages.ToList();
-			if (logMessages.Any())
+			if (!logMessages.Any())
 			{
 				return;
 			}

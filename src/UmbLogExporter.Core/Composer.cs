@@ -7,7 +7,7 @@ namespace UmbLogExporter.Core
 	{
 		public void Compose(Composition composition)
 		{
-			composition.Register<ILogExportBuilder, DefaultLogExportBuilder>();
+			composition.Register<ILogExportBuilder, ExcelLogExportBuilder>();
 
 			composition.Components().Append<TreeEvents>();
 		}

@@ -244,7 +244,7 @@
     <Compile Include="Composer.cs" />
     <Compile Include="TreeEvents.cs" />
     <Compile Include="ILogExportBuilder.cs" />
-    <Compile Include="DefaultLogExportBuilder.cs" />
+    <Compile Include="ExcelLogExportBuilder.cs" />
     <Compile Include="LogExporterController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TreeController.cs" />
