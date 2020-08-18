@@ -24,5 +24,15 @@ The `UmbLogExporter.Core` project contains the `ILogExportBuilder` interface. Th
 
 Excel was a good option to ship with the project as most clients will be familiar with searching data using Excel. However, it could easily export to CSV, a database or a destination of your choosing.
 
+## Contributing
+
+Once you've forked the repo, open the `src\UmbLogExporter.sln` solution in Visual Studio, set the `UmbLogExporter.Website` project as the start up project and hit F5.
+
+The Umbraco backoffice login details are:
+
+Username: root
+(Yes, it should be an email address... But we didn't want a dummy email address getting spammed with password reset requests...)
+Password: testing1234
+
 ## Credits
 As 99.9% of the code in this project is based on the Log Viewer that ships with Umbraco 8 it would be rude not to credit the core team - thanks for all your hard work guys!
