@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UmbLogExporter.Website", "UmbLogExporter.Website\UmbLogExporter.Website.csproj", "{DE414D67-B6CF-491D-A93E-0609F39EC3F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UmbLogExporter.Core", "UmbLogExporter.Core\UmbLogExporter.Core.csproj", "{29F289B7-C2AA-44A5-B8BD-72D242293651}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE414D67-B6CF-491D-A93E-0609F39EC3F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE414D67-B6CF-491D-A93E-0609F39EC3F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE414D67-B6CF-491D-A93E-0609F39EC3F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE414D67-B6CF-491D-A93E-0609F39EC3F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29F289B7-C2AA-44A5-B8BD-72D242293651}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29F289B7-C2AA-44A5-B8BD-72D242293651}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29F289B7-C2AA-44A5-B8BD-72D242293651}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29F289B7-C2AA-44A5-B8BD-72D242293651}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1244759C-AB24-4175-8C54-E82158ECC32B}
+	EndGlobalSection
+EndGlobal

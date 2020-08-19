@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata>
+		<id>UmbLogExporter</id>
+		<version>0.0.1.0</version>
+		<title>Log Viewer replacement for Umbraco 8</title>
+		<authors>KØBEN digital</authors>
+		<owners>KØBEN digital</owners>
+		<projectUrl>https://github.com/KOBENDigital/UmbLogExporter/</projectUrl>
+		<requireLicenseAcceptance>true</requireLicenseAcceptance>
+		<description>UmbLogExporter builds on the Log Viewer that ships with the Umbraco 8 Core adding options to export logs to a format of your choosing. It also tweaks the Log Viewer interface allowing you to change the log date range when searching.</description>
+		<summary>UmbLogExporter builds on the Log Viewer that ships with the Umbraco 8 Core adding options to export logs to a format of your choosing. It also tweaks the Log Viewer interface allowing you to change the log date range when searching.</summary>
+		<copyright>KØBEN digital</copyright>
+		<license type="expression">MIT</license>
+		<language>en-AU</language>
+		<tags>umbraco</tags>
+		<dependencies>
+			<dependency id="UmbracoCms" version="8.5.3" />
+			<dependency id="UmbLogExporter.Core" version="0.0.1.0" />
+		</dependencies>
+	</metadata>
+</package>

@@ -1,0 +1,2 @@
+Call nuget.exe restore ..\UmbLogExporter.sln
+Call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Current\Bin\MSBuild.exe" UmbLogExporter.Core/Package.build.xml /p:Configuration=Release

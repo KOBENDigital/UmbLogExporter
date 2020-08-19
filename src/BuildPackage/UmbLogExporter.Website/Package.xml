@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+	<info>
+		<package>
+			<name>UmbLogExporter</name>
+			<version>0.0.1.0</version>
+			<license url="http://opensource.org/licenses/MIT">MIT License</license>
+			<url>https://github.com/KOBENDigital/UmbLogExporter/</url>
+			<requirements>
+				<major>1</major>
+				<minor>0</minor>
+				<patch>2</patch>
+			</requirements>
+		</package>
+		<author>
+			<name>KØBEN digital</name>
+			<website>https://koben.com.au/</website>
+		</author>
+		<readme>
+			<![CDATA[UmbLogExporter builds on the Log Viewer that ships with the Umbraco 8 Core adding options to export logs to a format of your choosing. It also tweaks the Log Viewer interface allowing you to change the log date range when searching.]]>
+		</readme>
+	</info>
+	<DocumentTypes />
+	<Templates />
+	<Stylesheets />
+	<Macros />
+	<DictionaryItems />
+	<Languages />
+	<DataTypes />
+	<Actions />
+	<control />
+	<files />
+</umbPackage>
