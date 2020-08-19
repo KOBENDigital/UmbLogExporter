@@ -5,7 +5,7 @@
 			<name>UmbLogExporter.Core</name>
 			<version>0.0.1.0</version>
 			<license url="http://opensource.org/licenses/MIT">MIT License</license>
-			<url>https://github.com/ribsdigital/UmbLogExporter/</url>
+			<url>https://github.com/KOBENDigital/UmbLogExporter/</url>
 			<requirements>
 				<major>0</major>
 				<minor>1</minor>
@@ -13,8 +13,8 @@
 			</requirements>
 		</package>
 		<author>
-			<name>ribs digital</name>
-			<website>https://ribsdigital.com</website>
+			<name>KØBEN digital</name>
+			<website>https://koben.com.au/</website>
 		</author>
 		<readme>
 			<![CDATA[Core library for the UmbLogExporter Log Viewer replacement for Umbraco 8]]>

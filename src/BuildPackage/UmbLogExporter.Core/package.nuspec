@@ -4,13 +4,13 @@
 		<id>UmbLogExporter.Core</id>
 		<version>0.0.1.0</version>
 		<title>Core library for the UmbLogExporter Log Viewer replacement for Umbraco 8</title>
-		<authors>ribs digital</authors>
-		<owners>ribs digital</owners>
-		<projectUrl>https://github.com/ribsdigital/UmbLogExporter/</projectUrl>
+		<authors>KØBEN digital</authors>
+		<owners>KØBEN digital</owners>
+		<projectUrl>https://github.com/KOBENDigital/UmbLogExporter/</projectUrl>
 		<requireLicenseAcceptance>true</requireLicenseAcceptance>
 		<description>Core library for the UmbLogExporter Log Viewer replacement for Umbraco 8</description>
 		<summary>Core library for the UmbLogExporter Log Viewer replacement for Umbraco 8</summary>
-		<copyright>ribgs digital</copyright>
+		<copyright>KØBEN digital</copyright>
 		<license type="expression">MIT</license>
 		<language>en-Au</language>
 		<tags>umbraco</tags>
