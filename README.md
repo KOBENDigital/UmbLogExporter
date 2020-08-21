@@ -1,6 +1,15 @@
 # UmbLogExporter
 A Log Viewer replacement for [Umbraco](https://umbraco.com/) 8
 
+|NuGet Packages    |Version           |
+|:-----------------|:-----------------|
+|**Release**|[![NuGet download](http://img.shields.io/nuget/vpre/UmbLogExporter.svg)](https://www.nuget.org/packages/UmbLogExporter/)|[![NuGet count](https://img.shields.io/nuget/dt/UmbLogExporter.svg)](https://www.nuget.org/packages/UmbLogExporter/)|
+|**Release Core**|[![NuGet download](http://img.shields.io/nuget/vpre/UmbLogExporter.Core.svg)](https://www.nuget.org/packages/UmbLogExporter.Core/)|[![NuGet count](https://img.shields.io/nuget/dt/UmbLogExporter.Core.svg)](https://www.nuget.org/packages/UmbLogExporter.Core/)|
+
+|Umbraco Packages  |                  |
+|:-----------------|:-----------------|
+|**Release**|[![Our Umbraco project page](https://img.shields.io/badge/our-umbraco-orange.svg)](https://our.umbraco.com/packages/backoffice-extensions/umblogexporter/) 
+
 ## What is UmbLogExporter?
 UmbLogExporter builds on the [Log Viewer](https://our.umbraco.com/documentation/getting-started/Backoffice/LogViewer/) that ships with the [Umbraco](https://umbraco.com/) 8 Core adding options to export logs to a format of your choosing. It also tweaks the Log Viewer interface allowing you to change the log date range when searching.
 
